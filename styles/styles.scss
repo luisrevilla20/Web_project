@@ -1,12 +1,16 @@
 @import "./../bootstrap-4.4.1/scss/bootstrap.scss";
-$pri-btn-color: red;
+$pri-color:green;
+$sec-color: orange;
+$thi-color: aqua;
 $body-bg-color: #f5f5f5;
+$letra: black,Arial;
+
 
 body {
     display: -ms-flexbox;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 40px;
+    //padding-top: 40px;
     background-color: $body-bg-color;
   }
   
@@ -30,20 +34,30 @@ body {
     z-index: 2;
   }
   .form-signin input[type="email"] {
-    margin-bottom: -1px;
+    margin-bottom: 0px;
+    margin-top: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
   .form-signin input[type="password"] {
-    margin-bottom: 10px;
+    margin-bottom: -1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
 
   .btn-primary
   {
-    @include button-variant($pri-btn-color, darken($pri-btn-color, 7.5%), darken($pri-btn-color, 10%));
+    margin-top: 10px;
+    @include button-variant($pri-color, darken($pri-color, 7.5%), darken($pri-color, 10%));
   }
 
+  .rowtitle{
+      background-color: $sec-color;
+      color: $letra;
+  }
 
-
+  .rowcontent{
+      background-color: $thi-color;
+      color: $letra;
+      font-family: $letra;
+  }
