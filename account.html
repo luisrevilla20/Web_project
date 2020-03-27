@@ -9,21 +9,21 @@
   </head>
 
 
-  <body>
+  <body class="text-center">
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <a class="navbar-brand my-0 mr-md-auto text-muted" href="#">
-        <img src="./img/logo2.png" width="200" height="100" class="d-inline-block align-top" alt="Logo">
+      <a class="navbar-brand my-0 mr-md-auto text-muted" href="home.html">
+        <img src="./img/logo2.png" width="25" height="36" class="d-inline-block align-top" alt="Logo">
         Payit
       </a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link " href="#">Home</a>
+          <a class="nav-link " href="home.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Send</a>
+          <a class="nav-link" href="send.html">Send</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Withdrawal</a>
+          <a class="nav-link" href="withdrawal.html">Withdrawal</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Account</a>
@@ -34,25 +34,97 @@
       </ul>
     </div>
 
-   <div class="container">
-     <!-- <div class="row">
-        <div class="col-md-12 text-center"> -->
-        <form class="form-inline text-center">
-          <div class="form-group mb-2">
-            <label for="staticEmail2" class="sr-only">Email</label>
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="User">
-          </div>
-          <div class="form-group mx-sm-3 mb-2">
-            <label for="inputPassword2" class="sr-only">Password</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-          </div>
-            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-          </form>
-        <!--</div>
-      </div>-->
+    <br>
+    <br>
+    <div class="card container text-center">
+      <br>
+    <div class="card container col-md-4">
+      
+      <div class="card-header ">
+          <h3>Balance:</h3>
+      </div>
+      <div class="card-body">
+          <blockquote class="blockquote mb-0 text-center">
+            <h4>$100,000,420.69</h4>
+          </blockquote>
+      </div>
+      
     </div>
-    
 
+    <br>
+    <br>
+    <div class="card container col-md-6 text-center">
+      
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">User</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="User">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">New Username</label>
+          <input type="text" class="form-control" id="inputPassword2" placeholder="New Username">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Change</button>
+      </form>
+      
+      <br>
+
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">New email</label>
+          <input type="text" class="form-control" id="inputPassword2" placeholder="New email">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Change</button>
+      </form>
+      
+      <br>
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Change Password</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Change Password">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">New Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="New Password">
+        </div>
+        
+      </form>
+      
+      
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Confirm Password</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Confirm Password">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">Confirm Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Confirm   Password">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Change</button>
+      </form>
+    </div>
+    <br>
+    <div class="   container text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <button type="button" class="btn  btn-lg btn-outline-success">Link PayPal</button>
+          </div>
+          
+          <div class="col-sm-5">
+            <button type="button" class="btn  btn-lg btn-outline-danger">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+    <br>
+    <br>
     <footer class="container text-center">
       <div class="row">
         <div class="col-12 col-md">
