@@ -84,7 +84,7 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  text-decoration-skip-ink: none;
+  
 }
 
 address {
@@ -5143,7 +5143,7 @@ a.close.disabled {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
+  
   opacity: 0;
   border-radius: 0.25rem;
 }
@@ -9877,13 +9877,13 @@ h3 {
 
 .rowtitle {
   background-color: orange;
-  color: Helvetica;
+  color: green;
   font-size: 32px;
 }
 
 .rowcontent {
   background-color: aqua;
-  color: Helvetica;
+  color: green;
   font-size: 20px;
 }
 
