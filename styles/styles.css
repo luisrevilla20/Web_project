@@ -9775,7 +9775,7 @@ h3 {
   align-items: center;
   padding-top: 40px;
   background-color: #f5f5f5;
-  font-family: Arial;
+  font-family: Helvetica;
 }
 
 .bodylogo {
@@ -9877,13 +9877,13 @@ h3 {
 
 .rowtitle {
   background-color: orange;
-  color: Arial;
+  color: Helvetica;
   font-size: 32px;
 }
 
 .rowcontent {
   background-color: aqua;
-  color: Arial;
+  color: Helvetica;
   font-size: 20px;
 }
 

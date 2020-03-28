@@ -86,6 +86,7 @@
     padding-top: $body-pad;
     background-color: $body-bg-color;
     font-family: $letra;
+    //color: $letra-color;
     //font-size: $letra-tam;
   }
 
@@ -136,7 +137,8 @@
   {
     margin-top: 10px;
     @include button-variant($pri-color, darken($pri-color, 7.5%), darken($pri-color, 10%));
-  }
+    
+}
 
   .body2 {
     display: -ms-flexbox;
