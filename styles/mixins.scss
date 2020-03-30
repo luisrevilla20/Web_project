@@ -1,0 +1,177 @@
+//@import "./../bootstrap-4.4.1/scss/bootstrap.scss";
+@import "./../bootstrap-4.4.1/scss/functions";
+@import "./../bootstrap-4.4.1/scss/variables";
+
+@import "./../bootstrap-4.4.1/scss/mixins";
+@import "./../bootstrap-4.4.1/scss/root";
+@import "./../bootstrap-4.4.1/scss/reboot";
+@import "./../bootstrap-4.4.1/scss/type";
+@import "./../bootstrap-4.4.1/scss/images";
+@import "./../bootstrap-4.4.1/scss/code";
+@import "./../bootstrap-4.4.1/scss/grid";
+@import "./../bootstrap-4.4.1/scss/tables";
+@import "./../bootstrap-4.4.1/scss/forms";
+@import "./../bootstrap-4.4.1/scss/buttons";
+@import "./../bootstrap-4.4.1/scss/transitions";
+@import "./../bootstrap-4.4.1/scss/dropdown";
+@import "./../bootstrap-4.4.1/scss/button-group";
+@import "./../bootstrap-4.4.1/scss/input-group";
+@import "./../bootstrap-4.4.1/scss/custom-forms";
+@import "./../bootstrap-4.4.1/scss/nav";
+@import "./../bootstrap-4.4.1/scss/navbar";
+@import "./../bootstrap-4.4.1/scss/card";
+//@import "./../bootstrap-4.4.1/scss/breadcrumb";
+//@import "./../bootstrap-4.4.1/scss/pagination";
+@import "./../bootstrap-4.4.1/scss/badge";
+//@import "./../bootstrap-4.4.1/scss/jumbotron";
+@import "./../bootstrap-4.4.1/scss/alert";
+@import "./../bootstrap-4.4.1/scss/progress";
+@import "./../bootstrap-4.4.1/scss/media";
+@import "./../bootstrap-4.4.1/scss/list-group";
+@import "./../bootstrap-4.4.1/scss/close";
+@import "./../bootstrap-4.4.1/scss/toasts";
+@import "./../bootstrap-4.4.1/scss/modal";
+@import "./../bootstrap-4.4.1/scss/tooltip";
+@import "./../bootstrap-4.4.1/scss/popover";
+@import "./../bootstrap-4.4.1/scss/carousel";
+@import "./../bootstrap-4.4.1/scss/spinners";
+@import "./../bootstrap-4.4.1/scss/utilities";
+@import "./../bootstrap-4.4.1/scss/print"; 
+
+
+@import "./../bootstrap-4.4.1/scss/mixins/alert";
+@import "./../bootstrap-4.4.1/scss/mixins/background-variant";
+@import "./../bootstrap-4.4.1/scss/mixins/badge";
+@import "./../bootstrap-4.4.1/scss/mixins/border-radius";
+@import "./../bootstrap-4.4.1/scss/mixins/box-shadow";
+@import "./../bootstrap-4.4.1/scss/mixins/breakpoints";
+@import "./../bootstrap-4.4.1/scss/mixins/buttons";
+@import "./../bootstrap-4.4.1/scss/mixins/caret";
+@import "./../bootstrap-4.4.1/scss/mixins/clearfix";
+@import "./../bootstrap-4.4.1/scss/mixins/deprecate";
+@import "./../bootstrap-4.4.1/scss/mixins/float";
+@import "./../bootstrap-4.4.1/scss/mixins/forms";
+@import "./../bootstrap-4.4.1/scss/mixins/gradients";
+@import "./../bootstrap-4.4.1/scss/mixins/grid-framework";
+@import "./../bootstrap-4.4.1/scss/mixins/grid";
+@import "./../bootstrap-4.4.1/scss/mixins/hover";
+@import "./../bootstrap-4.4.1/scss/mixins/image";
+@import "./../bootstrap-4.4.1/scss/mixins/list-group";
+@import "./../bootstrap-4.4.1/scss/mixins/lists";
+@import "./../bootstrap-4.4.1/scss/mixins/nav-divider";
+@import "./../bootstrap-4.4.1/scss/mixins/pagination";
+@import "./../bootstrap-4.4.1/scss/mixins/reset-text";
+@import "./../bootstrap-4.4.1/scss/mixins/resize";
+@import "./../bootstrap-4.4.1/scss/mixins/screen-reader";
+@import "./../bootstrap-4.4.1/scss/mixins/size";
+@import "./../bootstrap-4.4.1/scss/mixins/table-row";
+@import "./../bootstrap-4.4.1/scss/mixins/text-emphasis";
+@import "./../bootstrap-4.4.1/scss/mixins/text-hide";
+@import "./../bootstrap-4.4.1/scss/mixins/text-truncate";
+@import "./../bootstrap-4.4.1/scss/mixins/transition";
+@import "./../bootstrap-4.4.1/scss/mixins/visibility";
+
+@if $enable-grid-classes {
+    // Single container class with breakpoint max-widths
+    .container {
+      @include make-container();
+      @include make-container-max-widths();
+    }
+}
+
+.body1 {
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: $body-pad;
+    background-color: $body-bg-color;
+    font-family: $letra;
+    //color: $letra-color;
+    //font-size: $letra-tam;
+  }
+
+  .bodylogo{
+    width: $img-bw;
+    height: $img-bh;
+  }
+
+  .footerlogo{
+    width: $img-fw;
+    height: $img-fh;
+}
+
+.navlogo{
+    width: $img-nw; 
+    height: $img-nh;
+}
+  
+  .form-signin {
+    width: $sign-w;
+    max-width: $sign-w-max;
+    padding: $sign-p;
+    margin: auto;
+  }
+  
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: $form-control-p;
+    font-size: $form-control-letra-tam;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-top: $input-mtop;
+    border-bottom-right-radius: $input-rr;
+    border-bottom-left-radius: $input-rl;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: $input-mtop;
+    border-top-left-radius: $input-rl;
+    border-top-right-radius: $input-rr;
+  }
+
+  .btn-primary
+  {
+    margin-top: 10px;
+    @include button-variant($pri-color, darken($pri-color, 7.5%), darken($pri-color, 10%));
+    
+}
+
+  .body2 {
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: $body-bg-color;
+    
+  }
+
+  .nav-link {
+    color: $nav-pills-letra-color2;
+  }
+
+  .nav-pills {
+    .nav-link {
+      @include border-radius($nav-pills-border-radius);
+    }
+  
+    .nav-link.active,
+    .show > .nav-link {
+      color: $nav-pills-letra-color1;
+      background-color: $nav-pills-color;
+    }
+  } 
+
+  .rowtitle{
+    background-color: $sec-color;
+    color: $letra-color;
+    font-size: $letra-tam-t;
+}
+
+.rowcontent{
+    background-color: $thi-color;
+    color: $letra-color;
+    font-size: $letra-tam;
+}
